@@ -1,3 +1,3 @@
 # Dockers for developers
 
-## Just docker-compose up
+## Just change volumes mapping and docker-compose up
