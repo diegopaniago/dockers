@@ -1,0 +1,14 @@
+version: '2'
+services:
+  mysql:
+    container_name: mysql
+    restart: always
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: 'sa123456'
+      MYSQL_USER: 'sa'
+      MYSQL_PASS: 'sa123456'
+    ports: 
+      - 3306:3306
+    volumes:
+      - /home/diego/projetos/dockers/mysql/data:/var/lib/mysql
