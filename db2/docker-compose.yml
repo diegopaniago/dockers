@@ -1,0 +1,16 @@
+version: '2'
+
+services: 
+  db2:
+    image: ibmcom/db2
+    container_name: 'db2'
+    environment: 
+      - name=db2dev
+      - privileged=true
+      - LICENSE=accept
+      - DB2INST1_PASSWORD=sa123456
+      - DBNAME=db2dev
+    ports: 
+     - 5000:5000
+    volumes: 
+      - /home/diego/dockers/db2/data:/database
