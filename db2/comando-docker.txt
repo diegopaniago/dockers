@@ -1,0 +1,1 @@
+docker run -itd --name dev --privileged=true -p 50000:50000 -e LICENSE=accept -e DB2INST1_PASSWORD=sa123456 -e DBNAME=db2dev -v /home/diego/dockers/db2/data:/database ibmcom/db2
